@@ -6,15 +6,17 @@ Vue.use(Vuex);
 
 @Module({ namespacedPath: 'athena/' })
 export class AthenaStore extends VuexModule {
-  // Uncommenting this line causes the 'Cannot call a class as a function' error
-  // @getter public foo = 'bar';
+  // This works now.
+  @getter public foo = 'bar';
 
-  // This getter is not accessible in the store
-  public foo = 'bar';
+  /* 
+   * private foo = 'bar'; This is not a getter. 
+   * It is just a state and cannot be accessible in your Vue Component. 
+   */
 
   @mutation
   public setFoo(value: string) {
     this.foo = value;
   }
 }
-export const athena = AthenaStore.ExtractVuexModule(AthenaStore);
+

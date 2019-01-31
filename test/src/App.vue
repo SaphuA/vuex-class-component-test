@@ -8,14 +8,15 @@
 <script lang="ts">
 import Vue from 'vue';
 import { Component } from 'vue-property-decorator';
-import { MutationMethod, ActionMethod } from 'vuex';
 import { AthenaStore } from './store/athena';
-import * as store from './store';
+import { vxm } from "./store";
 
 @Component
 export default class extends Vue {
-  // This type is required because the CreateProxy somehow resolves to any
-  //                  |
+
+  // ts-ignore is needed here cuz Vetur's type inference sucks.
+  // Prefer vxm over this approach. Its scales and works better.
+  // @ts-ignore                  
   private athena: AthenaStore = AthenaStore.CreateProxy(this.$store, AthenaStore);
 
   get foo() { return this.athena.foo; }
@@ -27,7 +28,7 @@ export default class extends Vue {
   public mounted() {
     console.log('Mounted:');
     console.log('VMX:');
-    console.log(store.vmx);
+    console.log( vxm.athena );
     console.log('Athena:');
     console.log(this.athena);
   }
