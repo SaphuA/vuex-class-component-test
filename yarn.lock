@@ -4645,11 +4645,6 @@ nanomatch@^1.2.9:
     snapdragon "^0.8.1"
     to-regex "^3.0.1"
 
-ncontracts.client@^1.1.267:
-  version "1.1.276"
-  resolved "http://sinopia.tools.ncontrol.local/ncontracts.client/-/ncontracts.client-1.1.276.tgz#4cbfa0f462c8fe1d353eda27e60378e508eb0fcb"
-  integrity sha512-AnZDK4wDdk6If2tLyLJ4TwYPz9c3afXneX3oPnnBBqiLvxO6+dP5aSA1xxz5l3WUyKuhp/yl7rTOTJXodL2Edw==
-
 needle@^2.2.1:
   version "2.2.4"
   resolved "https://registry.yarnpkg.com/needle/-/needle-2.2.4.tgz#51931bff82533b1928b7d1d69e01f1b00ffd2a4e"
@@ -7110,10 +7105,10 @@ vue@^2.5.22:
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.5.22.tgz#3bf88041af08b8539c37b268b70ca79245e9cc30"
   integrity sha512-pxY3ZHlXNJMFQbkjEgGVMaMMkSV1ONpz+4qB55kZuJzyJOhn6MSy/YZdzhdnumegNzVTL/Dn3Pp4UrVBYt1j/g==
 
-vuex-class-component@^1.3.4:
-  version "1.3.4"
-  resolved "https://registry.yarnpkg.com/vuex-class-component/-/vuex-class-component-1.3.4.tgz#33be11dfbf4642a1c0cf6af4014430b0bf6b3038"
-  integrity sha512-4Aq9h7SorXZ79Pq+XNJKuq89FNEmpwjPX9/ZYgot0e5AkS6ZOpi/hymZM6d0J67jSSPgHQDqDZ9q7JhkpnwbAQ==
+vuex-class-component@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/vuex-class-component/-/vuex-class-component-1.4.0.tgz#7e083e63a3a1b075ee7bb1c6de613c07ef432663"
+  integrity sha512-BVihZYwKWoaN5Zp8kPX+KkPGjd4y4pSYugp922MQHD/vnhbnWm6UtSEnADPeANb4hm0LIA/MDriQ5rtwpulEJw==
 
 vuex@^3.1.0:
   version "3.1.0"
